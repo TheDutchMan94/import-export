@@ -1,0 +1,157 @@
+{% load static %}
+<header>
+    <div class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="toolbar">
+                        <ul class="header_menu">
+                            <li>
+                                <a href="#"><i class="ion-flash active"></i>English<i class="ion-chevron-down icon_down"></i></a>
+                                <ul class="lang_menu">				
+                                    <li>Amharic</li>
+                                </ul>
+                            </li>
+                            <li><a href="tel:+001(1234)6457"><i class="ion-android-call active"></i>+251914277222</a></li>
+                            <li><a href="mailto:youremail@gmail.com"><i class="ion-email"></i>youremail@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+    <div class="header_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="header_logo">
+                        <a href="index.html"><img src="{% static 'images/images-header_logo.png' %}" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="main_nav">
+                        <nav class="header_nav">
+                            <ul class="main_menu">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                                <li><a href="{% url 'blog' %}">News/Blog</a></li>
+                                <li class="mega">
+                                    <a href="#">Import<i class="ion-chevron-down icon_down"></i></a>
+                                    <div class="mega_menu">
+                                        {% for mcat in mcats %}
+                                        <div class="food catg">
+                                            <div class="category_title">
+                                                <div class="style_div">
+                                                    <div class="div1"></div>
+                                                    <div class="div2"></div>
+                                                </div>
+                                                <div class="category_name">
+                                                    <h5>{{mcat.name}}</h5>
+                                                </div>
+                                            </div>
+                                            <ul class="category_menu">
+                                                {% for scat in scats %}
+                                                <li><a href="{% url 'import' scat.id %}"><i class="ion-arrow-right-c"></i>{{scat.name}}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        {% endfor %}							
+                                    </div>
+                                </li>
+                                <li class="mega">
+                                    <a href="#">Export<i class="ion-chevron-down icon_down"></i></a>
+                                    <div class="mega_menu">
+                                        {% for mcat in mcats %}
+                                        <div class="food catg">
+                                            <div class="category_title">
+                                                <div class="style_div">
+                                                    <div class="div1"></div>
+                                                    <div class="div2"></div>
+                                                </div>
+                                                <div class="category_name">
+                                                    <h5>{{mcat.name}}</h5>
+                                                </div>
+                                            </div>
+                                            <ul class="category_menu">
+                                                {% for scat in scats %}
+                                                <li><a href="{% url 'export' scat.id %}"><i class="ion-arrow-right-c"></i>{{scat.name}}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        {% endfor %}								
+                                    </div>
+                                </li>
+                                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="main_search">
+                            <a href="#"><i class="ion-ios-search-strong"></i></a>
+                            <div class="search_all">
+                                <form action="#" method="post">
+                                    <input type="text" placeholder="Search here...............">
+                                    <button><i class="ion-ios-search-strong"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>				
+            </div>			
+        </div>		
+    </div>
+    <div class="mobile_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="mobile_mean_logo">
+                        <a href="index.html">
+                            <img src="images/images-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="mobile_mean_menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about_us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Import</a>
+                                <ul>
+                                    <li>
+                                        <a href="import01.html">Food Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="import04.html">Household</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Export</a>
+                                <ul>
+                                    <li>
+                                        <a href="export01.html">Food Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="export04.html">Household</a>
+                                    </li>
+                                </ul>
+                            </li>
+                           									
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Blogs</a>
+                                
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	
+</header>

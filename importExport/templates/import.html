@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title-->
+	<title>Import Goods</title>
+
+	<!--Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/css-lato.css' %}">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'favicons/2681-images-favicon.png' %}">
+	<link rel="shortcut icon" href="{% static 'favicons/1046-images-favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'favicons/851-images-favicon.png' %}" type="image/png">
+
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="{% static 'css/css-bootstrap.min.css' %}">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/css-font-awesome.min.css' %}">
+
+	<!-- Animate -->
+	<link rel="stylesheet" href="{% static 'css/css-animate.css' %}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/css-owl.carousel.min.css' %}">
+
+	<!-- Venobox -->
+	<link rel="stylesheet" href="{% static 'css/css-venobox.css' %}">
+
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="{% static 'css/css-ionicons.min.css' %}">
+
+	<!-- Mean menu css -->
+	<link rel="stylesheet" href="{% static 'css/css-meanmenu.min.css' %}">
+
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<!-- ======================================
+	        ==   Start Header area  ==
+	====================================== -->
+	{% include "header.html" %}
+	<!-- ======================================
+	        ==   End Header area  ==
+	====================================== -->
+	<!-- preloader -->
+
+	<!-- ======================================
+	        ==   Start Breadcrumb  area  ==
+	====================================== -->
+	<section class="breadcrumb">	
+		<div class="container">
+			<div class="supplier_title">
+				<h1 class="sup_title" data-in-effect="flipInY" data-out-effect="flipOutY">{{impname.name}}</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="supplier_country">
+						<div class="country">
+							<ul>
+								<li><a href="{% url 'home' %}">Home</a>
+								<i class="ion-ios-arrow-forward"></i>
+								</li>
+								<li><a href="#">import</a>
+								<i class="ion-ios-arrow-forward"></i>
+								</li>
+								<li><a href="#">{{impname.name}}</a></li>
+							</ul>
+						</div>
+						<div class="search_supplier">					
+							<form action="#" method="post">
+								<input type="text" placeholder="Search here...............">
+								<button><i class="ion-ios-search-strong"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- ======================================
+	        ==   End Breadcrumb area  ==
+	====================================== -->
+	<!-- ======================================
+	        ==   Start Export area  ==
+	====================================== -->
+	<section class="export">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>{{impname.name}}</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				{% for product in products %}
+				<div class="col-sm-4 col-xs-12">
+					<div class="export_item">
+						<img src="{{product.picture.url}}" alt="export">
+						<h2>{{product.name}}</h2>
+						<div class="export_desc">
+							<p>{{product.description}}</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        ==   End Export area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Footer area  ==
+	====================================== -->
+	{% include "footer.html" %}
+	<!-- ======================================
+	        == End Footer area  ==
+	====================================== -->
+	<!-- Scripts -->
+
+	<!-- Jquery -->
+	<script src="{% static 'js/2114-js-jquery-3.2.1.min.js' %}"></script>
+
+	<!--Bootstrap -->
+	<script src="{% static 'js/5974-js-bootstrap.min.js' %}"></script>
+
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/4296-js-owl.carousel.min.js' %}"></script>
+
+	<!-- Wow Js -->
+	<script src="{% static 'js/9986-js-wow.min.js' %}"></script>
+
+	<!-- Venobox-->
+	<script src="{% static 'js/4437-js-venobox.min.js' %}"></script>
+
+	<!-- lettering js -->
+	<script src="{% static 'js/9681-js-jquery.lettering.js' %}"></script>
+
+	<!-- Textillate js -->
+	<script src="{% static 'js/1487-js-jquery.textillate.js' %}"></script>
+
+	<!-- Mean Menu js -->
+	<script src="{% static 'js/43-js-jquery.meanmenu.min.js' %}"></script>
+
+	<!--google map js -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- Main js -->
+	<script src="{% static 'js/6792-js-main.js' %}"></script>
+</body>
+</html>

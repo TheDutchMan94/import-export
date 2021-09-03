@@ -1,0 +1,495 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title-->
+	<title>Import/Export System</title>
+
+	<!--Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/css-lato.css' %}">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'favicons/2681-images-favicon.png' %}">
+	<link rel="shortcut icon" href="{% static 'favicons/1046-images-favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'favicons/851-images-favicon.png' %}" type="image/png">
+
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="{% static 'css/css-bootstrap.min.css' %}">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/css-font-awesome.min.css' %}">
+
+	<!-- Animate -->
+	<link rel="stylesheet" href="{% static 'css/css-animate.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/css-owl.carousel.min.css' %}">
+
+	<!-- Venobox -->
+	<link rel="stylesheet" href="{% static 'css/css-venobox.css' %}">
+
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="{% static 'css/css-ionicons.min.css' %}">
+
+	<!-- Mean menu css -->
+	<link rel="stylesheet" href="{% static 'css/css-meanmenu.min.css' %}">
+
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<!-- ======================================
+	        ==   Start Header area  ==
+	====================================== -->
+{% include "header.html" %}
+	<!-- ======================================
+	        ==   End Header area  ==
+	====================================== -->
+	<section class="main_slider">
+		<div class="main_slider_area owl-carousel owl-loaded owl-drag">
+			
+			
+		<div class="owl-stage-outer">
+			<div class="owl-stage" >
+			<div class="owl-item cloned" style="width: 1519.2px;">
+				<div class="main_slide" style="background-image:url('{% static "images/sliderimage.jpg" %}')">	
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main_slider_table">
+									<div class="main_slider_cell">
+										<div class="main_slider_info">
+											<h5 class="animated fadeInLeft">We are an Import Export Company</h5>
+											<h1 class="animated fadeInLeft">We buy and sell goods</h1>
+											<h2 class="animated fadeInRight">Build Your Business With Us</h2>						
+											<div class="slider_contact_me btn1 animated fadeInRight">
+												<div class="btn1_main">			
+													<a href="contact.html">contact us<i class="ion-ios-arrow-right"></i></a>
+												</div>
+												<div class="btn1_hover">				
+													<div class="slider_contact_me btn1_info animated fadeInRight">
+														<a href="contact.html"><i class="ion-ios-arrow-right"></i>contact us</a>
+													</div>										
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="owl-nav disabled">
+		<div class="owl-prev">prev</div>
+		<div class="owl-next">next</div>
+	</div>
+	<div class="owl-dots">
+		<div class="owl-dot active"><span></span></div>
+		<div class="owl-dot"><span></span></div>
+	</div>
+	</div>		
+	</section>
+
+	<!-- ======================================
+	        ==   End Main Slider area  ==
+	====================================== -->
+	<!-- ======================================
+	        ==   Start Search area  ==
+	====================================== -->
+	<section class="search_area">
+		<div class="container">
+			<div class="row">			
+				<div class="col-md-12">
+					<div class="search_info">
+						<h1 class="txt_search" data-in-effect="bounceInUp" data-out-effect="bounceOutDown">Search for latest goods to buyers &amp; sell from all over the world</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<div class="search_form">					
+						<form action="#" method="post">
+							<div class="search_bar">
+								<input type="text" placeholder="keywords">
+								<i class="icon ion-edit"></i>
+							</div>
+							<div class="search_btn">
+								<button class="srch_btn btn3">search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ======================================
+	        ==  End Search area  ==
+	====================================== -->
+
+	<!-- ======================================
+	        ==  Start What I do area  ==
+	====================================== -->
+	<section class="do">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>what  we  do</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 ">
+					<div class="services">
+						<div class="service_area1  wow rotateInDownRight">
+							<div class="single_services">
+								<div class="service_info">
+									<h2>Import</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>
+								<div class="service_image">
+									<img src="{% static 'images/images-import.svg' %}" alt="import" class="svg">
+								</div>
+							</div>
+							<div class="single_services">
+								<div class="service_info">
+									<h2>Export</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>
+								<div class="service_image">
+									<img src="{% static 'images/images-export.svg' %}" alt="export" class="svg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<div class="services">
+						<div class="service_area2 wow rotateInDownLeft">
+							<div class="single_services current_page_item">
+								<div class="service_image">
+										<img src="{% static 'images/images-cart.svg' %}" alt="cart" class="svg">
+									</div>
+								<div class="service_info">
+									<h2>buy</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>							
+							</div>
+							<div class="single_services">
+								<div class="service_image">
+										<img src="{% static 'images/images-sales.svg' %}" alt="sales" class="svg">
+									</div>
+								<div class="service_info">
+									<h2>sales</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        == End What I do area  ==
+	====================================== -->
+
+	<!-- ======================================
+	        == Start Popular Categories area  ==
+	====================================== -->
+	<section class="popular_categories">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>Popular Categories</h1>
+					</div>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="categories_slider owl-carousel owl-loaded owl-drag" data-wow-duration="2s">
+						
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						{% for product in products%}
+						<div class="owl-item cloned" style="width: 320px; margin-right: 25px;">
+						<figure class="single_category">
+							<a class="veno vbox-item" href="{{product.picture.url}}" data-gall="myGallery" data-title="Featured Categories">
+								<img src="{{product.picture.url}}" height="300px" width="300px" alt="{{product.name}}">
+								<div class="icon">									
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>	
+							<figcaption class="category_hover">
+								<div class="category_info">									
+									<h3>{{product.name}}</h3>
+									<div class="category_desc">
+									<p>{{product.description}}</p>
+									</div>
+								</div>
+							</figcaption>							
+						</figure>
+					</div>
+					{% endfor %}
+						
+					</div></div><div class="owl-nav"><div class="owl-prev"><i class="ion-arrow-left-c"></i></div><div class="owl-next"><i class="ion-arrow-right-c"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<!-- ======================================
+	        == End Popular Categories area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Trusted Partners area  ==
+	====================================== -->
+	<section class="trusted_partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>Our Partners</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				{% for partner in partners %}
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="{{partner.picture.url}}" data-gall="myGallery" data-title="Our Partners">
+								<img src="{{partner.picture.url}}" alt="{{partner.name}}">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="{{partner.website}}"><i class="ion-link"></i></a>
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			
+		</div>
+	</section>
+	<!-- ======================================
+	        == End Trusted Partners area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Questions area  ==
+	====================================== -->
+	<section class="question_consultation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 col-sm-8">
+					<div class="question_accordion wow slideInLeft">
+						<div class="title_style">
+							<h1>f . a . question</h1>
+						</div>
+						<div class="accordian_area">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<a class="active" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<div class="panel-title">
+											<p>01. How Do I Become a Distributor?</p>
+											<i class="ion-chevron-down open-accordion"></i>
+											<i class="ion-chevron-right close-accordion"></i>
+										</div>
+				          			</a>	    
+			      					<div id="collapseOne" class="panel-collapse collapse in">
+										<div class="panel_info">
+											
+											<div class="panel-body">
+											Mirum est notare quam littera gothica, quam nunc putamus parum ant litterarum formas humanitatis per seacula quarta decima et quinta deceo.
+										</div> 
+										</div> 
+			    					</div>
+			      				</div>
+			      				<div class="panel panel-default">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										<div class="panel-title">
+											<p>02. Where Can I Buy Your Products?</p>
+											<i class="ion-chevron-down open-accordion"></i>
+											<i class="ion-chevron-right close-accordion"></i>
+										</div>
+				          			</a>	    
+			      					<div id="collapseTwo" class="panel-collapse collapse">
+										<div class="panel_info">
+											
+											<div class="panel-body">
+											Mirum est notare quam littera gothica, quam nunc putamus parum ant litterarum formas humanitatis per seacula quarta decima et quinta deceo.
+										</div> 
+										</div> 
+			    					</div>
+			      				</div>
+			      				<div class="panel panel-default">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										<div class="panel-title">
+											<p>03. Why You Can Business With Us?</p>
+											<i class="ion-chevron-down open-accordion"></i>
+											<i class="ion-chevron-right close-accordion"></i>
+										</div>
+				          			</a>	    
+			      					<div id="collapseThree" class="panel-collapse collapse ">
+										<div class="panel_info">
+										
+											<div class="panel-body">
+											Mirum est notare quam littera gothica, quam nunc putamus parum ant litterarum formas humanitatis per seacula quarta decima et quinta deceo.
+										</div> 
+										</div>  
+			    					</div>
+			      				</div>
+			      				<div class="panel panel-default">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+										<div class="panel-title">
+											<p>04. Placerat Facer Possim Assum Bepn habent?</p>
+											<i class="ion-chevron-down open-accordion"></i>
+											<i class="ion-chevron-right close-accordion"></i>
+										</div>
+				          			</a>	    
+			      					<div id="collapseFour" class="panel-collapse collapse">
+										<div class="panel_info">
+											<div class="panel-body">
+											Mirum est notare quam littera gothica, quam nunc putamus parum ant litterarum formas humanitatis per seacula quarta decima et quinta deceo.
+										</div> 
+										</div>   
+			    					</div>
+			      				</div>      					
+							</div>
+						</div>				
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        == End Questions area  ==
+	====================================== -->
+
+	
+	<!-- ======================================
+	        == Start Latest News area  ==
+	====================================== -->
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>latest news</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="news_slider owl-carousel owl-loaded owl-drag">
+						
+						
+									
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+						{% for blog in blogs %}
+							<div class="owl-item cloned" style="width: 570px;">
+							<article class="single_news">					
+							<figure class="news_image">
+								<a href="{% url 'blogdetail' blog.id %}"><img src="{{blog.picture.url}}" height="350px" width="300px" alt="news"></a>
+							</figure>
+							<div class="news_desc">
+								<div class="news_info">
+									<ul>
+										<li>
+											<div class="info_image">
+												<i class="ion-ios-calendar-outline"></i>
+											</div>
+											<div class="info_desc">
+												<p>{{blog.uploaded_date}}</p>
+											</div>
+										</li>
+										<li>
+											<div class="info_image">
+												<i class="ion-ios-person-outline"></i>
+											</div>
+											<div class="info_desc">
+												<p>{{blog.uploaded_by}}</p>
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="news_details">
+									<a href="blogDetails.html">
+										<h3>{{blog.title}}</h3>
+									</a>
+									<a href="blogDetails.html">Continue Reading....</a>
+								</div>
+							</div>
+							</article></div>
+						{% endfor %}
+					</div></div>
+					
+						</div>
+				</div>
+			</div>	
+			
+		</div>
+		
+	</section>
+	<!-- ======================================
+	        == End Latest News area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Footer area  ==
+	====================================== -->
+	{% include "footer.html" %}
+	<!-- ======================================
+	        == End Footer area  ==
+	====================================== -->
+	<!-- Scripts -->
+
+	<!-- Jquery -->
+	<script src="{% static 'js/3035-js-jquery-3.2.1.min.js' %}"></script>
+
+	<!--Bootstrap -->
+	<script src="{% static 'js/4042-js-bootstrap.min.js' %}"></script>
+
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/5824-js-owl.carousel.min.js' %}"></script>
+
+	<!-- Wow Js -->
+	<script src="{% static 'js/1545-js-wow.min.js' %}"></script>
+
+	<!-- Venobox-->
+	<script src="{% static 'js/970-js-venobox.min.js' %}"></script>
+
+	<!-- lettering js -->
+	<script src="{% static 'js/2928-js-jquery.lettering.js' %}"></script>
+
+	<!-- Textillate js -->
+	<script src="{% static 'js/2638-js-jquery.textillate.js' %}"></script>
+
+	<!-- Mean Menu js -->
+	<script src="{% static 'js/8372-js-jquery.meanmenu.min.js' %}"></script>
+
+	<!--google map js -->
+	<script src="https://maps.googleapis.com/maps/api/js' %}"></script>
+
+	<!-- Main js -->
+	<script src="{% static 'js/4405-js-main.js' %}"></script>
+	
+</body>
+</html>

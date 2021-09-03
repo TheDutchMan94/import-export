@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title-->
+	<title>Blog Detail</title>
+
+	<!--Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/css-lato.css' %}">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'favicons/2681-images-favicon.png' %}">
+	<link rel="shortcut icon" href="{% static 'favicons/1046-images-favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'favicons/851-images-favicon.png' %}" type="image/png">
+
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="{% static 'css/css-bootstrap.min.css' %}">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/css-font-awesome.min.css' %}">
+
+	<!-- Animate -->
+	<link rel="stylesheet" href="{% static 'css/css-animate.css' %}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/css-owl.carousel.min.css' %}">
+
+	<!-- Venobox -->
+	<link rel="stylesheet" href="{% static 'css/css-venobox.css' %}">
+
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="{% static 'css/css-ionicons.min.css' %}">
+
+	<!-- Mean menu css -->
+	<link rel="stylesheet" href="{% static 'css/css-meanmenu.min.css' %}">
+
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<!-- ======================================
+	        ==   Start Header area  ==
+	====================================== -->
+	{% include "header.html" %}
+
+	<!-- ======================================
+	        ==   End Header area  ==
+	====================================== -->
+	<!-- preloader -->
+
+	<!-- ======================================
+	        ==   Start Breadcrumb  area  ==
+	====================================== -->
+	<section class="breadcrumb">	
+		<div class="container">
+			<div class="supplier_title">
+				<h1 class="sup_title" data-in-effect="flipInY" data-out-effect="flipOutY">Blog Details</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="supplier_country">
+						<div class="country">
+							<ul>
+								<li><a href="index.html">Home</a>
+								<i class="ion-ios-arrow-forward"></i>
+								</li>
+								<li><a href="index.html">Pages</a>
+								<i class="ion-ios-arrow-forward"></i>
+								</li>
+								<li><a href="#">Blog Details</a></li>
+							</ul>
+						</div>
+						<div class="search_supplier">					
+							<form action="#" method="post">
+								<input type="text" placeholder="Search here...............">
+								<button><i class="ion-ios-search-strong"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- ======================================
+	        ==   End Breadcrumb area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Blog area  ==
+	====================================== -->
+	<section class="blog">
+		<div class="container">
+			<div class="row">
+				{% for blog in blog %}
+				<div class="col-md-9 col-sm-8">
+					<article class="blog_section wow slideInLeft" data-wow-duration="2s">
+						<div class="blog_image">
+							<img src="{{blog.picture.url}}" alt="Blog">
+						</div>
+						<div class="news_desc">
+							<div class="news_info">
+								<ul>
+									<li>
+										<div class="info_image">
+											<i class="ion-ios-calendar-outline"></i>
+										</div>
+										<div class="info_desc">
+											<p>{{blog.uploaded_date}}</p>
+										</div>
+									</li>
+									<li>
+										<div class="info_image">
+											<i class="ion-ios-person-outline"></i>
+										</div>
+										<div class="info_desc">
+											<p>By {{blog.uploaded_by}}</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="news_details">
+								<h3>{{blog.title}}</h3>
+							</div>
+						</div>
+						<div class="article_details">
+							<p>{{blog.description}}</p>
+						</div>
+					</article>
+					
+				</div>
+				{% endfor %}
+				<div class="col-md-3 col-sm-4">
+					<aside class="blog_aside">
+						<div class="blog_search">
+							<form action="#" method="post">
+								<input type="text" placeholder="Search here">
+								<button><i class="ion-ios-search-strong"></i></button>
+							</form>
+						</div>
+						<div class="category_search">
+							<div class="widget_title">
+								<h1>category</h1>
+							</div>
+							<form action="#" method="post">
+								<div class="select">
+									<select class="options">
+										<option value="export">Export</option>
+									    <option value="import" selected>Import</option>
+									    <option value="buy">Buy</option>
+									    <option value="sales">Sales</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- ======================================
+	        == End Blog area  ==
+	====================================== -->
+	<!--======================================
+	        == Start Footer area  ==
+	====================================== -->
+	{% include "footer.html" %}
+	<!-- ======================================
+	        == End Footer area  ==
+	====================================== -->
+	<!-- Scripts -->
+
+	<!-- Jquery -->
+	<script src="{% static 'js/8824-js-jquery-3.2.1.min.js' %}"></script>
+
+	<!--Bootstrap -->
+	<script src="{% static 'js/8506-js-bootstrap.min.js' %}"></script>
+
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/7390-js-owl.carousel.min.js' %}"></script>
+
+	<!-- Wow Js -->
+	<script src="{% static 'js/7686-js-wow.min.js' %}"></script>
+
+	<!-- Venobox-->
+	<script src="{% static 'js/3511-js-venobox.min.js' %}"></script>
+
+	<!-- lettering js -->
+	<script src="{% static 'js/7497-js-jquery.lettering.js' %}"></script>
+
+	<!-- Textillate js -->
+	<script src="{% static 'js/6203-js-jquery.textillate.js' %}"></script>
+
+	<!-- Mean Menu js -->
+	<script src="{% static 'js/6281-js-jquery.meanmenu.min.js' %}"></script>
+
+	<!--google map js -->
+	<script src="https://maps.googleapis.com/maps/api/js' %}"></script>
+
+	<!-- Main js -->
+	<script src="{% static 'js/3595-js-main.js' %}"></script>
+</body>
+</html>

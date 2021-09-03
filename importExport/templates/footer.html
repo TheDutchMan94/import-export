@@ -1,0 +1,142 @@
+<footer>
+    <section class="contact_area">
+        <div class="container">
+            <div class="row">
+                <div class="contact_box">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="contact">
+                            <div class="contact_title">
+                                <h1>Emergency Contact</h1>
+                            </div>
+                            <div class="contact_desc">
+                                <div class="contact_image">
+                                    <i class="ion-android-call"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <a href="#">+251914277222</a>								
+                                    <a href="#">+251911111111</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="contact">
+                            <div class="contact_title">
+                                <h1>Location</h1>
+                            </div>
+                            <div class="contact_desc">
+                                <div class="contact_image">
+                                    <i class="ion-ios-location-outline"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <p>203, General Winget, Behind Tourist Hottel,Addis Ababa, Ethiopia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="contact">
+                            <div class="contact_title">
+                                <h1>Emergency Contact</h1>
+                            </div>
+                            <div class="contact_desc">
+                                <div class="contact_image">
+                                    <i class="ion-ios-email-outline"></i>
+                                </div>
+                                <div class="contact_info">
+                                    <a href="mailto:infonews@gmail.com">ayifter@gmail.com</a>
+                                    <a href="mailto:youremailname.net?subject=feedback">abrhamyifter.net</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer top -->
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <div class="footer_logo wow slideInLeft">
+                        <div class="footer_logo_image">
+                            <a href="index.html"><img src="images/images-logo.png" alt="logo"></a>
+                        </div>
+                        <div class="footer_logo_info">
+                            <p>Duis autem vel eum iriure dolor in hendr vulputatec velit esse molestie consequat vel illum dolofeu nulla facilisis at vero eros et accumsan et iusto dignissim qui blandit praesent luptatum zzril delenit .</p>
+                        </div>						
+                        <div class="social_media">					
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ion-social-facebook"></i>
+                                        <i class="ion-social-facebook hover_effect"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ion-social-twitter"></i>
+                                        <i class="ion-social-twitter hover_effect"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ion-social-instagram"></i>
+                                        <i class="ion-social-instagram-outline hover_effect"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ion-social-skype"></i>
+                                        <i class="ion-social-skype-outline hover_effect"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>					
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_list_link wow slideInLeft">
+                        <div class="widget_title">
+                            <h1>quick link</h1>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="{% url 'home' %}"><i class="ion-arrow-right-c"></i>Home</a></li>
+                                <li><a href="{% url 'aboutus' %}"><i class="ion-arrow-right-c"></i>About Us</a></li>
+                                <li><a href="{% url 'contactus' %}"><i class="ion-arrow-right-c"></i>Contact Us</a></li>
+                                <li><a href="{% url 'blog' %}"><i class="ion-arrow-right-c"></i>Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer_list_link wow slideInLeft">
+                        <div class="widget_title">
+                            <h1>Our Partners</h1>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                {% for partner in partners %}
+                                <li><a href="{{partner.website}}"><i class="ion-arrow-right-c"></i>{{partner.name}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer bootom -->
+    <div class="footer_bottom">		
+        <div class="container">
+            <div class="copyright">
+            <p data-hover="Copyright &copy; 2017, Design  by ThemeeBiT">Copyright &copy; 2021, Powered  by TechIN</p>
+        </div>					
+        <div class="scroll btn2">
+            <i class="ion-arrow-up-c"></i>
+        </div>
+        </div>					
+    </div>
+</footer>

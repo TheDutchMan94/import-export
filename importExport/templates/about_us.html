@@ -1,0 +1,457 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title-->
+	<title>About Us</title>
+
+	<!--Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/css-lato.css' %}">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon-precomposed" href="{% static 'favicons/2681-images-favicon.png' %}">
+	<link rel="shortcut icon" href="{% static 'favicons/1046-images-favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'favicons/851-images-favicon.png' %}" type="image/png">
+
+	<!-- Bootstrap -->	
+	<link rel="stylesheet" href="{% static 'css/css-bootstrap.min.css' %}">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/css-font-awesome.min.css' %}">
+
+	<!-- Animate -->
+	<link rel="stylesheet" href="{% static 'css/css-animate.css' %}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/css-owl.carousel.min.css' %}">
+
+	<!-- Venobox -->
+	<link rel="stylesheet" href="{% static 'css/css-venobox.css' %}">
+
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="{% static 'css/css-ionicons.min.css' %}">
+
+	<!-- Mean menu css -->
+	<link rel="stylesheet" href="{% static 'css/css-meanmenu.min.css' %}">
+
+	<!-- Main style sheet -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<!-- ======================================
+	        ==   Start Header area  ==
+	====================================== -->
+	{% include "header.html" %}
+	<!-- ======================================
+	        ==   End Header area  ==
+	====================================== -->
+	<!-- preloader -->
+
+	<!-- ======================================
+	        ==   Start Breadcrumb  area  ==
+	====================================== -->
+	<section class="breadcrumb">	
+		<div class="container">
+			<div class="supplier_title">
+				<h1 class="sup_title" data-in-effect="flipInY" data-out-effect="flipOutY">About us</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="supplier_country">
+						<div class="country">
+							<ul>
+								<li><a href="{% url 'home' %}">Home</a>
+								<i class="ion-ios-arrow-forward"></i>
+								</li>
+								<li><a href="#">About Us</a></li>
+							</ul>
+						</div>
+						<div class="search_supplier">					
+							<form action="#" method="post">
+								<input type="text" placeholder="Search here...............">
+								<button><i class="ion-ios-search-strong"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- ======================================
+	        ==   End Breadcrumb area  ==
+	====================================== -->
+	<!-- ======================================
+	        ==   Start About us area  ==
+	====================================== -->
+	<section class="about_info">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-sm-3">
+					<aside class="about_list">
+						<ul>
+							<li class="active"><a href="#wdo" data-list="What I Do" data-toggle="tab">What We Do</a></li>		
+							<li><a href="#mission" data-list="my mission" data-toggle="tab">our mission</a></li>
+							<li><a href="#vission" data-list="my vission" data-toggle="tab">our vision</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-sm-9">
+					<div class="tab-content">
+						<div class="tab-pane fade-in active" id="wdo">
+							<div class="single_tab">
+								<figure class="single_tab_image">
+									<img src="images/images-About-us.png" alt="About Us">
+								</figure>
+								<article class="single_tab_txt">
+									<h2>Suscipit lobortis nisl ut aliquip ex ea commodo consequat duis autemvel</h2>
+									<p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit iputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis leend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
+								</article>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="mission">
+							<div class="single_tab">
+								<figure class="single_tab_image">
+									<img src="{% static 'images/images-us2.jpg' %}" alt="About Us">
+								</figure>
+								<article class="single_tab_txt">
+									<h2>Suscipit lobortis nisl ut aliquip ex ea commodo consequat duis autemvel</h2>
+									<p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit iputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis leend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
+								</article>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="vission">
+							<div class="single_tab">
+								<figure class="single_tab_image">
+									<img src="{% static 'images/images-mission.jpg' %}" alt="About Us">
+								</figure>
+								<article class="single_tab_txt">
+									<h2>Suscipit lobortis nisl ut aliquip ex ea commodo consequat duis autemvel</h2>
+									<p>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit iputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis leend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        ==   End About us area  ==
+	====================================== -->
+	<!-- ======================================
+	        ==  Start What I do area  ==
+	====================================== -->
+	<section class="about_us do">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>what  we  do</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 ">
+					<div class="services">
+						<div class="service_area1  wow rotateInDownRight">
+							<div class="single_services">
+								<div class="service_info">
+									<h2>Import</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>
+								<div class="service_image">
+									<img src="images/images-import.svg" alt="import" class="svg">
+								</div>
+							</div>
+							<div class="single_services">
+								<div class="service_info">
+									<h2>Export</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>
+								<div class="service_image">
+									<img src="images/images-export.svg" alt="export" class="svg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-sm-offset-4 ">
+					<div class="services">
+						<div class="service_area2 wow rotateInDownLeft">
+							<div class="single_services current_page_item">
+								<div class="service_image">
+										<img src="images/images-cart.svg" alt="cart" class="svg">
+									</div>
+								<div class="service_info">
+									<h2>buy</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>							
+							</div>
+							<div class="single_services">
+								<div class="service_image">
+										<img src="images/images-sales.svg" alt="sales" class="svg">
+									</div>
+								<div class="service_info">
+									<h2>sales</h2>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        == End What I do area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Trusted Partners area  ==
+	====================================== -->
+	<section class="trusted_partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>trusted Partners</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand11.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand11.png" alt="brand1.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand22.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand22.png" alt="brand2.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand11.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand11.png" alt="brand1.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand22.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand22.png" alt="brand2.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand11.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand11.png" alt="brand1.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand22.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand22.png" alt="brand2.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand11.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand11.png" alt="brand1.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="single_brand">
+						<figure>
+							<a class="brand_veno" href="images/brand22.png" data-gall="myGallery" data-title="Trusted Partners">
+								<img src="images/images-brand22.png" alt="brand2.png">
+								<div class="icon1">
+									<i class="ion-android-expand"></i>	
+								</div>
+							</a>							
+							<div class="brand_hover">							
+								<div class="icon2">
+									<a href="partnerDetails.html"><i class="ion-link"></i></a>							
+								</div>
+							</div>						
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======================================
+	        == End Trusted Partners area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Feedback area  ==
+	====================================== -->
+	<section class=" about_us feedback">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title_style">
+						<h1>our buyer/supplier feedback</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="feedback_slider owl-carousel">
+						<div class="single_feedback">
+							<div class="feedback_info">
+								<blockquote>
+									Duis autem vel eum iriure dolor in hendrerit in vultate velit esse molestie consequat vel illum dolore eu fgiat nulla facilisis at vero eros et accumsan et iusto.
+								</blockquote>
+								<p>Md. Masud , DIT  Manager</p>
+							</div>
+							<div class="feed_image">
+								<img src="images/images-feedback1.png" alt="feedback" class="feedback_image">
+							</div>
+						</div>
+						<div class="single_feedback">
+							<div class="feedback_info">
+								<blockquote>
+								Duis autem vel eum iriure dolor in hendrerit in vultate velit esse molestie consequat vel illum dolore eu fgiat nulla facilisis at vero eros et accumsan et iusto.
+								</blockquote>
+								<p>Keith Hawkins , DIT  Manager</p>
+							</div>
+							<div class="feed_image">
+								<img src="images/images-feedback2.png" alt="feedback" class="feedback_image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!-- ======================================
+	        == End Feedback area  ==
+	====================================== -->
+	<!-- ======================================
+	        == Start Footer area  ==
+	====================================== -->
+	{% include "footer.html" %}
+
+	<!-- ======================================
+	        == End Footer area  ==
+	====================================== -->
+	<!-- Scripts -->
+
+	<!-- Jquery -->
+	<script src="{% static 'js/952-js-jquery-3.2.1.min.js' %}"></script>
+
+	<!--Bootstrap -->
+	<script src="{% static 'js/4959-js-bootstrap.min.js' %}"></script>
+
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/6692-js-owl.carousel.min.js' %}"></script>
+
+	<!-- Wow Js -->
+	<script src="{% static 'js/3253-js-wow.min.js' %}"></script>
+
+	<!-- Venobox-->
+	<script src="{% static 'js/447-js-venobox.min.js' %}"></script>
+
+	<!-- lettering js -->
+	<script src="{% static 'js/3141-js-jquery.lettering.js' %}"></script>
+
+	<!-- Textillate js -->
+	<script src="{% static 'js/7673-js-jquery.textillate.js' %}"></script>
+
+	<!-- Mean Menu js -->
+	<script src="{% static 'js/2134-js-jquery.meanmenu.min.js' %}"></script>
+
+	<!--google map js -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- Main js -->
+	<script src="{% static 'js/2166-js-main.js' %}"></script>
+</body>
+</html>
